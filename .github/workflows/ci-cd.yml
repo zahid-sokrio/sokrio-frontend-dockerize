@@ -22,4 +22,5 @@ jobs:
           script: |
            cd sokrio-frontend-dockerize
            docker compose down
+           docker compose build
            docker compose up -d
