@@ -20,6 +20,6 @@ jobs:
           username: ${{ secrets.AZURE_VM_USERNAME }}
           password: ${{ secrets.AZURE_VM_PASSWORD }}
           script: |
-           cd sokrio-docker-frontend
+           cd sokrio-frontend-dockerize
            docker compose down
            docker compose up -d
