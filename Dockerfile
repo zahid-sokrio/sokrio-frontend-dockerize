@@ -13,6 +13,9 @@ WORKDIR ${appDir}
 COPY package.json ${appDir}/package.json
 COPY yarn.lock ${appDir}/yarn.lock
 
+# Install npm dependencies and install ava globally
+RUN yarn global add @vue/cli
+
 # Install project dependencies
 RUN yarn install
 
@@ -22,9 +25,7 @@ COPY . ${appDir}
 # Build the frontend
 RUN yarn build
 
-# Install npm dependencies and install ava globally
-RUN yarn global add @vue/cli
-
+#Clean Cache
 RUN yarn cache clean
 
 # Expose port
