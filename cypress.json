@@ -1,0 +1,10 @@
+{
+  "pluginsFile": "tests/e2e/plugins/index.js",
+  "baseUrl": "http://app.sokrio-server.test:8080",
+  "viewportWidth": 1250,
+  "viewportHeight": 1200,
+  "defaultCommandTimeout": 15000,
+  "defalutTimeout": 15000,
+  "pageLoadTimeout": 50000,
+  "requestTimeout": 50000
+}

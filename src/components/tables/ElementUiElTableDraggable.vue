@@ -1,0 +1,79 @@
+<template>
+  <div ref="wrapper">
+    <div :key="tableKey">
+      <slot></slot>
+    </div>
+  </div>
+</template>
+
+<script>
+import { Sortable } from 'sortablejs';
+
+export default {
+  name: 'ElementUiElTableDraggable',
+  props: {
+    handle: {
+      type: String,
+      default: ''
+    },
+    animate: {
+      type: Number,
+      default: 100
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data() {
+    return {
+      tableKey: 0
+    };
+  },
+  methods: {
+    makeTableSortAble() {
+      const table = this.$children[0].$el.querySelector('.el-table__body-wrapper tbody');
+      let sorting = new Sortable(table, {
+        handle: this.handle,
+        disabled: !this.disabled,
+        animation: this.animate,
+        onEnd: ({ newIndex, oldIndex }) => {
+          this.keepWrapperHeight(true);
+          this.tableKey = Math.random();
+          const arr = this.$children[0].data;
+          const targetRow = arr.splice(oldIndex, 1)[0];
+          arr.splice(newIndex, 0, targetRow);
+          this.$emit('drop', { targetObject: targetRow, list: arr, newIndex: newIndex, oldIndex: oldIndex });
+        }
+      });
+    },
+    keepWrapperHeight(keep) {
+      // eslint-disable-next-line prefer-destructuring
+      const wrapper = this.$refs.wrapper;
+      if (keep) {
+        wrapper.style.minHeight = `${wrapper.clientHeight}px`;
+      } else {
+        wrapper.style.minHeight = 'auto';
+      }
+    }
+  },
+  mounted() {
+    this.makeTableSortAble();
+  },
+  watch: {
+    tableKey() {
+      this.$nextTick(() => {
+        this.makeTableSortAble();
+        this.keepWrapperHeight(false);
+      });
+    },
+    disabled() {
+      this.$nextTick(() => {
+        this.makeTableSortAble();
+        this.keepWrapperHeight(true);
+        this.tableKey = Math.random();
+      });
+    }
+  }
+};
+</script>

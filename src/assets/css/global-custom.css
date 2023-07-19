@@ -1,0 +1,34 @@
+.custom-base-input > .form-group {
+    margin-bottom: 0 !important;
+}
+
+.el-table td, th {
+    padding-left: 0 !important;
+    padding-right: 5px !important;
+}
+
+/*.nav-item ul{*/
+/*  z-index: 999999999;*/
+/*}*/
+.el-loading-mask {
+    z-index: 499 !important;
+}
+
+.el-select__input {
+    margin-left: 5px !important;
+}
+
+.bg-info {
+    background-color: #2183a7 !important;
+}
+
+.text-sokrio{
+    color: #2698a8;
+}
+.modal-dialog-scrollable{
+    max-height: 100%;
+}
+.el-drawer__body {
+    overflow: scroll;
+}
+

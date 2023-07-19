@@ -1,0 +1,237 @@
+[
+  {
+    "path": "/user/roles",
+    "name": "User",
+    "description": "Roles, list of users and targets"
+  },
+  {
+    "path": "/user/users",
+    "name": "Users",
+    "description": "List of users"
+  },
+  {
+    "path": "/user/roles",
+    "name": "Roles",
+    "description": "Roles of users"
+  },
+  {
+    "path": "/user/targets",
+    "name": "Targets",
+    "description": "Targets for users"
+  },
+  {
+    "path": "/organization/department-types",
+    "name": "Organization",
+    "description": "List of department types and badges"
+  },
+
+  {
+    "path": "/organization/department-types",
+    "name": "Department types",
+    "description": "List of department types"
+  },
+  {
+    "path": "/organization/departments",
+    "name": "Departments",
+    "description": "List of departments"
+  },
+  {
+    "path": "/organization/badges",
+    "name": "Badges",
+    "description": "List of badges"
+  },
+  {
+    "path": "/product",
+    "name": "Inventory",
+    "description": "Product Details"
+  },
+  {
+    "path": "/product/product-brands",
+    "name": "Product brands",
+    "description": "Brands of all products"
+  },
+  {
+    "path": "/product/product-categories",
+    "name": "Product categories",
+    "description": "Product categories"
+  },
+  {
+    "path": "/product/variants",
+    "name": "Variants",
+    "description": "List of product variants"
+  },
+  {
+    "path": "/product/products",
+    "name": "Products",
+    "description": "List of products"
+  },
+  {
+    "path": "/product/promotions",
+    "name": "Promotions",
+    "description": "List of promotions"
+  },
+  {
+    "path": "/tracking",
+    "name": "Tracking",
+    "description": "Tracking details"
+  },
+  {
+    "path": "/tracking/territory-types",
+    "name": "Territory types",
+    "description": "Types of territories",
+    "label": "Territory Type",
+    "icon": "fa fa-map-signs"
+  },
+  {
+    "path": "/tracking/territories",
+    "name": "Territory",
+    "description": "List of territories",
+    "label": "Territory",
+    "icon": "fa fa-map"
+  },
+  {
+    "path": "/tracking/route-plans",
+    "name": "Route plans",
+    "description": "All route plans",
+    "label": "Route Plans",
+    "icon": "fas fa-road"
+  },
+  {
+    "path": "/tracking/field-force-list",
+    "name": "Field force list",
+    "description": "List of field forces",
+    "label": "Field force list",
+    "icon": "fas fa-road"
+  },
+  {
+    "path": "/tracking/map-view",
+    "name": "Map view of field force",
+    "description": "Map view of all field forces",
+    "label": "Field force list",
+    "icon": "fas fa-road"
+  },
+  {
+    "path": "/attendance",
+    "name": "Attendance",
+    "description": "Attendance details"
+  },
+  {
+    "path": "/inspection",
+    "name": "Inspection",
+    "description": "Inspection details"
+  },
+  {
+    "path": "/inspection/survey",
+    "name": "Survey",
+    "description": "Survey details"
+  },
+  {
+    "path": "/inspection/assets",
+    "name": "Assets",
+    "description": "List and details of assets",
+    "meta": {
+      "label": "Assets",
+      "icon": "ni ni-box-2"
+    }
+  },
+  {
+    "path": "/inspection/merchandise",
+    "name": "Merchandise",
+    "description": "List and details of merchandise",
+    "meta": {
+      "label": "Merchandise",
+      "icon": "ni ni-notification-70"
+    }
+  },
+  {
+    "path": "/inspection/audits",
+    "name": "Audits",
+    "description": "List and details of audits",
+    "meta": {
+      "label": "Audits",
+      "icon": "ni ni-align-left-2"
+    }
+  },
+  {
+    "path": "/inspection/outlet-items",
+    "name": "Outlet Items",
+    "description": "List and details of outlet items",
+    "meta": {
+      "label": "Outlet Items",
+      "icon": "ni ni-archive-2"
+    }
+  },
+  {
+    "path": "/order",
+    "name": "Order",
+    "description": "Order details",
+    "meta": {
+      "label": "Order",
+      "icon": "fa fa-cart-arrow-down"
+    }
+  },
+  {
+    "path": "/order/orders",
+    "name": "Orders",
+    "description": "List and details of orders",
+    "meta": {
+      "label": "Order",
+      "icon": "fa fa-cart-arrow-down"
+    }
+  },
+  {
+    "path": "/order/requisitions",
+    "name": "Requisitions",
+    "description": "List and details of requisitions",
+    "label": "Requisitions",
+    "icon": "fa fa-shopping-cart"
+  },
+  {
+    "path": "/order/sales-return",
+    "name": "Sales return",
+    "description": "Sales return details",
+    "meta": {
+      "label": "Sales Return",
+      "icon": "fas fa-undo-alt"
+    }
+  },
+  {
+    "path": "/order/invoices",
+    "name": "Invoices",
+    "description": "List and details of invoices",
+    "meta": {
+      "label": "Invoices",
+      "icon": "fas fa-file-invoice"
+    }
+  },
+  {
+    "path": "/payments",
+    "name": "Payments",
+    "description": "All payments"
+  },
+  {
+    "path": "/stock",
+    "name": "Stock",
+    "description": "Stock details"
+  },
+  {
+    "path": "/profile/my-profile",
+    "name": "Profile",
+    "description": "User profile details"
+  },
+  {
+    "path": "/billing",
+    "name": "Billing",
+    "description": "User billings"
+  },
+  {
+    "path": "/billing/subscription",
+    "name": "Subscription",
+    "description": "User subscription"
+  },
+  {
+    "path": "/billing/invoice",
+    "name": "Billing invoice",
+    "description": "Invoice of user billing"
+  }
+]

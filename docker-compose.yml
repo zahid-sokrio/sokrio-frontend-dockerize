@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/app/:rw
+      - /var/www/app/node_modules
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - laravel
+
+#Global
+
+networks:
+  laravel:
+
